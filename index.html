@@ -5,9 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Commandeck &mdash; Magic: The Gathering Commander deckbuilder</title>
 <meta name="description" content="A free Android app for Magic: The Gathering Commander players: deck builder, commander insights, deck analysis and an opening hand simulator.">
+<meta name="color-scheme" content="dark">
+<link rel="preload" href="fonts/cinzel-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/spectral-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="rail"></div>
 <header class="site">
   <div class="wrap">
     <a class="brand" href="./">Commandeck</a>
@@ -20,32 +25,33 @@
 </header>
 <main>
   <div class="wrap">
-    <section class="hero">
-      <h1>Build better Commander decks.</h1>
-      <p class="lead">Commandeck is a free Android app for Magic: The Gathering Commander players. Search cards, build decks, and see how your list compares to what the rest of the format is actually playing.</p>
-    </section>
+    <h1>Build better Commander decks.</h1>
+    <p class="lead">A free Android app for Magic: The Gathering Commander players. Search cards, build decks, and see how your list measures up against what the rest of the format is actually playing.</p>
+    <ul class="pips" aria-hidden="true">
+      <li class="pip w"></li><li class="pip u"></li><li class="pip b"></li><li class="pip r"></li><li class="pip g"></li>
+    </ul>
 
     <ul class="features">
-      <li><strong>Deck builder</strong>Build and edit 100-card decks with live format checks, colour identity validation and mana curve breakdowns.</li>
-      <li><strong>Commander insights</strong>For each commander, the cards other players run, grouped by theme, with real inclusion rates and sample sizes.</li>
-      <li><strong>Deck analysis</strong>Compare your curve against the average deck for your commander, and see what you are missing and what you are overloading.</li>
-      <li><strong>Opening hand simulator</strong>Draw test hands with London mulligan rules and exact hypergeometric odds for keeping, flooding and screwing.</li>
-      <li><strong>Card search</strong>The full Scryfall catalogue, with new sets and recently printed cards surfaced as they release.</li>
-      <li><strong>Works offline</strong>Your decks live on your device. No account, no sign-up, no ads.</li>
+      <li class="w"><strong>Deck builder</strong>Build and edit 100-card decks with live singleton checks, colour identity validation and mana curve breakdowns.</li>
+      <li class="u"><strong>Commander insights</strong>For any commander, the cards other players actually run &mdash; grouped by theme, with real inclusion rates and sample sizes.</li>
+      <li class="b"><strong>Deck analysis</strong>Compare your curve against the average deck for your commander, and see what you are missing and where you are overloaded.</li>
+      <li class="r"><strong>Opening hand</strong>Draw test hands under London mulligan rules, with exact hypergeometric odds for keeping, flooding and screwing.</li>
+      <li class="g"><strong>Card search</strong>The full Scryfall catalogue, with new sets and recently printed cards surfaced as they release.</li>
+      <li class="c"><strong>Yours, on your device</strong>Your decks live on your phone and work offline. No account, no sign-up, no ads.</li>
     </ul>
 
     <h2>Availability</h2>
-    <p>Commandeck is in development and will be released on Google Play. This page will be updated with a download link when it goes live.</p>
+    <p>Commandeck is in development and will be released on Google Play. This page will carry the download link when it goes live.</p>
 
     <h2>Questions or bug reports</h2>
-    <p>Write to <a href="mailto:ferry.applications@gmail.com">ferry.applications@gmail.com</a>.</p>
+    <p>Write to <a href="mailto:ferry.applications@gmail.com">ferry.applications@gmail.com</a>. Reports of a card that renders wrong, a rule the builder gets wrong, or a commander with bad data are all welcome.</p>
   </div>
 </main>
 <footer class="site">
   <div class="wrap">
     <p>Contact: <a href="mailto:ferry.applications@gmail.com">ferry.applications@gmail.com</a></p>
-    <p class="legal">Commandeck is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. &copy;Wizards of the Coast LLC.</p>
     <p>Card data and images courtesy of <a href="https://scryfall.com">Scryfall</a>. Commander play statistics from <a href="https://playgroup.gg">playgroup.gg</a>, used under CC BY 4.0.</p>
+    <p class="legal">Commandeck is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. &copy;Wizards of the Coast LLC.</p>
   </div>
 </footer>
 </body>
