@@ -1,7 +1,7 @@
 # commandeck-web
 
 Public site for the Commandeck Android app, served from GitHub Pages at
-<https://davidferrandiz.github.io/commandeck-web/>.
+<https://commandeck.github.io/>.
 
 - `index.html` — landing page, used as the website URL in the Play listing
 - `privacy.html` — privacy policy, required by Google Play
