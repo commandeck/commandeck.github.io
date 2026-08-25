@@ -66,6 +66,9 @@ header.site .wrap {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.62rem;
   font-family: var(--display);
   font-weight: 700;
   font-size: 1.22rem;
@@ -76,6 +79,13 @@ header.site .wrap {
 }
 
 .brand:hover { color: var(--gold); }
+
+.brand-mark {
+  display: block;
+  width: 1.7rem;
+  height: 1.7rem;
+  flex: none;
+}
 
 nav a {
   font-family: var(--body);
