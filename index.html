@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Commandeck &mdash; Magic: The Gathering Commander deckbuilder</title>
-<meta name="description" content="A free Android app for Magic: The Gathering Commander players: deck builder, commander insights, deck analysis and an opening hand simulator.">
+<meta name="description" content="A free Magic: The Gathering Commander deck builder for Android: real inclusion rates, mana curve analysis, bracket 1-5 assessment and an opening hand simulator. No account, no ads.">
 <meta name="color-scheme" content="dark">
 <link rel="preload" href="fonts/cinzel-600-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/spectral-400-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -23,7 +23,8 @@
       <span>Commandeck</span>
     </a>
     <nav>
-      <a href="./">Home</a>
+      <a href="#features">Features</a>
+      <a href="#support">Support</a>
       <a href="privacy.html">Privacy</a>
       <a href="mailto:ferry.applications@gmail.com">Contact</a>
     </nav>
@@ -32,39 +33,63 @@
 <main>
   <div class="wrap">
     <h1>Build better Commander decks.</h1>
-    <p class="lead">A free Android app for Magic: The Gathering Commander players. Search cards, build decks, and see how your list measures up against what the rest of the format is actually playing.</p>
+    <p class="lead">A free Magic: The Gathering Commander deck builder for your phone. Build your list, then see how it measures up against what the rest of the format is actually playing &mdash; inclusion rates, curve, bracket and table results, in one app.</p>
+
+    <div class="stores">
+      <a class="store" href="https://play.google.com/store/apps/details?id=com.ferryapplications.commandeck" rel="noopener">
+        <span class="store-kicker">Android</span>
+        <span class="store-name">Get it on Google&nbsp;Play</span>
+      </a>
+      <span class="store store-soon" aria-disabled="true">
+        <span class="store-kicker">iOS</span>
+        <span class="store-name">App&nbsp;Store</span>
+        <span class="store-tag">Coming soon</span>
+      </span>
+    </div>
+
+    <p class="pledge">Free, no ads, no account, nothing behind a paywall &mdash; and it stays that way. It runs on donations: <a href="https://ko-fi.com/commandeck" rel="noopener">buy me a coffee on Ko&#8209;fi</a>.</p>
+
     <ul class="pips" aria-hidden="true">
       <li class="pip w"></li><li class="pip u"></li><li class="pip b"></li><li class="pip r"></li><li class="pip g"></li>
     </ul>
 
+    <h2 id="features">What it does</h2>
     <ul class="features">
-      <li class="w"><strong>Deck builder</strong>Build and edit 100-card decks with live singleton checks, colour identity validation and mana curve breakdowns.</li>
-      <li class="u"><strong>Commander insights</strong>For any commander, the cards other players actually run &mdash; grouped by theme, with real inclusion rates and sample sizes.</li>
-      <li class="b"><strong>Deck analysis</strong>Compare your curve against the average deck for your commander, and see what you are missing and where you are overloaded.</li>
-      <li class="r"><strong>Opening hand</strong>Draw test hands under London mulligan rules, with exact hypergeometric odds for keeping, flooding and screwing.</li>
-      <li class="g"><strong>Card search</strong>The full Scryfall catalogue, with new sets and recently printed cards surfaced as they release.</li>
-      <li class="c"><strong>Yours, on your device</strong>Your decks live on your phone and work offline. No account, no sign-up, no ads.</li>
+      <li class="w"><strong>Deck builder</strong>Build and edit 100-card decks with live singleton checks, colour identity validation and a mana curve that updates as you go. Partners, Backgrounds and Doctor&rsquo;s companions are handled properly.</li>
+      <li class="u"><strong>Commander insights</strong>For any commander, the cards other players actually run &mdash; grouped by what they do in the deck, with real inclusion rates and the sample size behind each one, so you can tell a staple from a rounding error. The numbers come from Commandeck&rsquo;s own nightly crawl of published decks, not from a screenshot of someone else&rsquo;s site.</li>
+      <li class="b"><strong>Deck analysis</strong>Your curve against the average deck for your commander, ranked suggestions for what you are missing, and where you are overloaded &mdash; with the number of decks each comparison is drawn from.</li>
+      <li class="r"><strong>Bracket 1&ndash;5</strong>An honest read of your own list against the five signals that define the brackets: game changers, tutors, extra turns, mass land denial and two-card combos &mdash; naming the exact cards that moved the needle.</li>
+      <li class="g"><strong>Opening hand</strong>Draw test hands under London mulligan rules, with exact hypergeometric odds for keeping, flooding and screwing. No simulation noise: the real numbers.</li>
+      <li class="c"><strong>Card search</strong>The full Scryfall catalogue, with new sets and recently printed cards surfaced as they release.</li>
+      <li class="w"><strong>Published decks</strong>Browse real lists built for your commander, straight from Archidekt &mdash; sorted by most viewed, newest or recently updated, each with its declared bracket, colour breakdown and tags. Open one and read it card by card, or save it as a starting point.</li>
+      <li class="u"><strong>Table results</strong>How a commander actually performs when people sit down and play: win rate, Elo, salt and fun ratings, its leading win condition and a sixteen-week popularity trend, from playgroup.gg.</li>
+      <li class="b"><strong>Prices where you buy</strong>Every card links out to Cardmarket, TCGplayer or Card Kingdom, picked to match where you are, so you can price a build without leaving the deck.</li>
+      <li class="g"><strong>Yours, on your device</strong>No account, no sign-up, no ads and no tracking. Your decks live on your phone and never leave it, and a deck you have already opened stays readable without a connection.</li>
     </ul>
 
+    <h2 id="support">Support the project</h2>
+    <div class="support">
+      <p class="support-lead">Commandeck is free, and it is going to stay free. It has no company behind it, no investors and no ads &mdash; just donations and my evenings.</p>
+      <p>All of it is mine to keep running: the deck builder, the crawler that gathers play data every night, the hypergeometric maths behind the opening hands, the servers the commander data sits on. If the app saved you time, a coffee keeps it going.</p>
+      <p class="support-cta"><a class="btn" href="https://ko-fi.com/commandeck" rel="noopener">Buy me a coffee on Ko&#8209;fi</a></p>
+      <p class="support-note">To be clear about what it does not buy: nothing in the app is locked behind it, no feature is reserved for supporters, and nothing ever will be. Commandeck is free because it should be.</p>
+    </div>
+
     <h2>Availability</h2>
-    <p>Commandeck is in development and will be released on Google Play. This page will carry the download link when it goes live.</p>
+    <p><strong>Android</strong> &mdash; out now on <a href="https://play.google.com/store/apps/details?id=com.ferryapplications.commandeck" rel="noopener">Google Play</a>, free, no in-app purchases.</p>
+    <p><strong>iOS</strong> &mdash; in development. The app is being rebuilt on a shared core so the iPhone version behaves exactly like the Android one rather than being a thinner copy of it. This page will carry the App Store link when it goes live.</p>
 
     <h2>Questions or bug reports</h2>
     <p>Write to <a href="mailto:ferry.applications@gmail.com">ferry.applications@gmail.com</a>. Reports of a card that renders wrong, a rule the builder gets wrong, or a commander with bad data are all welcome.</p>
 
     <h2>Who makes this</h2>
     <p>Commandeck is built by one person. I am an Android developer, I have been playing Commander for years, and I got tired of brewing with a browser on one screen, a spreadsheet on the other and three tabs of inclusion rates in between. So I built the thing I kept wishing existed.</p>
-    <p>All of it is mine to keep running: the deck builder, the crawler that gathers play data every night, the hypergeometric maths behind the opening hands. There is no company behind this, no investors, and no plan to ever put a feature behind a payment.</p>
-
-    <h2>Supporting the project</h2>
-    <p>If Commandeck saved you time and you feel like helping, you can <a href="https://ko-fi.com/commandeck" rel="noopener">buy me a coffee</a>. It buys me evenings, which is the only thing this project actually runs on.</p>
-    <p>To be clear about what it does not buy: nothing in the app is locked behind it, no feature is reserved for supporters, and nothing ever will be. Commandeck is free because it should be.</p>
   </div>
 </main>
 <footer class="site">
   <div class="wrap">
     <p>Contact: <a href="mailto:ferry.applications@gmail.com">ferry.applications@gmail.com</a></p>
-    <p>Card data and images courtesy of <a href="https://scryfall.com">Scryfall</a>. Commander play statistics from <a href="https://playgroup.gg">playgroup.gg</a>, used under CC BY 4.0.</p>
+    <p>Card data and images courtesy of <a href="https://scryfall.com">Scryfall</a>. Commander play statistics from <a href="https://playgroup.gg">playgroup.gg</a>, used under CC BY 4.0. Published decklists from <a href="https://archidekt.com">Archidekt</a>.</p>
     <p class="legal">Commandeck is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. &copy;Wizards of the Coast LLC.</p>
   </div>
 </footer>
