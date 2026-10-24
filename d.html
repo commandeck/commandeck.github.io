@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shared deck &mdash; Commandeck</title>
+<meta name="description" content="A Commander deck shared from Commandeck. Open it in the app, or read the list here.">
+<!-- Every deck is a different fragment of this one page: there is nothing here for a search engine. -->
+<meta name="robots" content="noindex">
+<meta property="og:title" content="A Commander deck shared from Commandeck">
+<meta property="og:description" content="Open it in Commandeck, or read the list and buy it on TCGplayer.">
+<meta property="og:image" content="https://commandeck.github.io/apple-touch-icon.png">
+<meta name="color-scheme" content="dark">
+<meta name="apple-itunes-app" content="app-id=6808718667">
+<link rel="preload" href="fonts/cinzel-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/spectral-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="d.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" sizes="96x96" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+<div class="rail"></div>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="./">
+      <img class="brand-mark" src="logo.svg" alt="" width="72" height="72">
+      <span>Commandeck</span>
+    </a>
+    <span class="kicker">Shared deck</span>
+  </div>
+</header>
+<main class="deck-page">
+  <div class="wrap">
+    <!-- Filled by d.js from the link's fragment; never sent to this server. -->
+    <section id="deck" hidden>
+      <div class="deck-hero">
+        <div class="deck-card" id="deck-card"></div>
+        <div class="deck-head">
+          <h1 id="deck-name"></h1>
+          <p class="deck-commanders" id="deck-commanders"></p>
+          <ul class="deck-pips" id="deck-pips" aria-label="Colour identity"></ul>
+          <p class="deck-stats" id="deck-stats"></p>
+        </div>
+      </div>
+
+      <a class="btn deck-open" id="deck-open" href="./">Open in Commandeck</a>
+
+      <div class="badges">
+        <a href="https://play.google.com/store/apps/details?id=com.ferryapplications.commandeck" rel="noopener">
+          <img class="badge-play" src="badges/google-play.png" alt="Get it on Google Play" width="646" height="250">
+        </a>
+        <a href="https://apps.apple.com/app/id6808718667" rel="noopener">
+          <img class="badge-apple" src="badges/app-store.svg" alt="Download on the App Store" width="120" height="40">
+        </a>
+      </div>
+
+      <a class="buy" id="deck-buy" href="https://www.tcgplayer.com/" rel="noopener sponsored">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20.5" r="1"/><circle cx="17" cy="20.5" r="1"/></svg>
+        Buy this deck on TCGplayer
+      </a>
+
+      <div id="deck-sections"></div>
+      <button class="show-all" id="show-all" type="button" hidden></button>
+    </section>
+
+    <section id="deck-problem" class="deck-problem" hidden>
+      <h1 id="problem-title"></h1>
+      <p id="problem-text"></p>
+      <p><a href="./">What is Commandeck?</a></p>
+    </section>
+
+    <noscript>
+      <section class="deck-problem">
+        <h1>This deck needs JavaScript</h1>
+        <p>The list travels inside the link and this page reads it in your browser. Turn JavaScript on, or open the link in Commandeck.</p>
+      </section>
+    </noscript>
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p>The list travels inside the link: this page reads it in your browser and nothing is uploaded or stored.</p>
+    <p>Card data, images and prices courtesy of <a href="https://scryfall.com">Scryfall</a>. Buying through the TCGplayer button supports Commandeck at no cost to you.</p>
+    <p class="legal">Commandeck is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. &copy;Wizards of the Coast LLC.</p>
+  </div>
+</footer>
+<script src="d.js" defer></script>
+</body>
+</html>

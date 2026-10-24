@@ -1,0 +1,166 @@
+/* A deck shared as a link (d.html). Same spellbook as the landing. */
+
+header.site .kicker {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+}
+
+main.deck-page { padding: 1.6rem 0 3.5rem; }
+
+.deck-hero {
+  display: flex;
+  gap: 1.1rem;
+  align-items: center;
+  margin-bottom: 1.4rem;
+}
+
+/* The card is shown whole: Scryfall's images are never cropped or covered. */
+.deck-card {
+  flex: none;
+  width: 6.4rem;
+  aspect-ratio: 488 / 680;
+  border-radius: 4.75% / 3.5%;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  box-shadow: 0 0.6rem 1.6rem rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.deck-card img { display: block; width: 100%; height: 100%; }
+
+.deck-head { min-width: 0; }
+
+.deck-head h1 {
+  font-size: clamp(1.45rem, 5.6vw, 2.1rem);
+  line-height: 1.22;
+  margin: 0 0 0.3rem;
+  overflow-wrap: anywhere;
+}
+
+.deck-commanders {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+  line-height: 1.45;
+  color: var(--text-soft);
+}
+
+.deck-pips {
+  display: flex;
+  gap: 0.4rem;
+  margin: 0 0 0.45rem;
+  padding: 0;
+  list-style: none;
+}
+
+.deck-pips .pip { width: 0.95rem; height: 0.95rem; }
+
+.deck-stats {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.deck-open {
+  display: block;
+  text-align: center;
+  margin: 0 0 1rem;
+}
+
+/* The official badges, unmodified; the Play one carries its own clear space. */
+.badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 1rem;
+}
+
+.badges a { display: block; line-height: 0; }
+.badge-play { width: auto; height: 3.65rem; }
+.badge-apple { width: auto; height: 2.5rem; }
+
+.buy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 3rem;
+  border: 1px solid var(--gold-soft);
+  border-radius: 12px;
+  color: var(--gold-soft);
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  margin: 0 0 2rem;
+}
+
+.buy:hover { color: var(--gold); border-color: var(--gold); }
+
+.deck-section { margin: 0 0 1.4rem; }
+
+.deck-section-head {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.3rem;
+}
+
+.deck-section-head .filet { flex: 1; height: 1px; background: rgba(201, 162, 39, 0.35); }
+
+.deck-section-head h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1.02rem;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+/* Outweighs the landing's `main ul:not(.features):not(.pips)` bullets. */
+main.deck-page ul.deck-rows,
+main.deck-page ul.deck-pips { list-style: none; margin: 0; padding: 0; }
+main.deck-page ul.deck-pips { margin-bottom: 0.45rem; }
+
+.deck-page .deck-rows li.deck-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 2.3rem;
+  align-items: center;
+  margin: 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.98rem;
+  color: var(--text);
+}
+
+.deck-row-name { min-width: 0; overflow-wrap: anywhere; }
+
+.deck-row-price {
+  flex: none;
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.show-all {
+  display: block;
+  width: 100%;
+  min-height: 2.75rem;
+  background: none;
+  border: 0;
+  color: var(--gold-soft);
+  font-family: var(--body);
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+}
+
+.show-all:hover { color: var(--gold); }
+
+.deck-problem h1 { font-size: clamp(1.5rem, 5.6vw, 2.1rem); }

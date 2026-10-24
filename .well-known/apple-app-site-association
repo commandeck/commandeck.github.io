@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["8K3YJ42M2M.com.ferryapplications.Commandeck"],
+        "components": [
+          { "/": "/d", "comment": "A deck shared as a link (K51 / D119)" },
+          { "/": "/d/" }
+        ]
+      }
+    ]
+  }
+}
