@@ -5,7 +5,8 @@
       "namespace": "android_app",
       "package_name": "com.ferryapplications.commandeck",
       "sha256_cert_fingerprints": [
-        "D5:8F:5C:1A:72:1E:80:D4:D0:59:A5:C8:CD:73:77:0C:FC:58:10:07:99:5C:E3:53:6D:0F:6D:9E:36:0C:D3:C7"
+        "D5:8F:5C:1A:72:1E:80:D4:D0:59:A5:C8:CD:73:77:0C:FC:58:10:07:99:5C:E3:53:6D:0F:6D:9E:36:0C:D3:C7",
+        "C7:1B:2D:E1:41:2C:AE:19:C1:69:9B:DD:76:0B:A0:57:7B:67:AD:91:22:9B:60:E0:32:8F:3B:2E:57:90:D4:88"
       ]
     }
   }
